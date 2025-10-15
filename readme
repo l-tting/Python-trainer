@@ -1,0 +1,88 @@
+PYTHON PROGRAMMING INTRODUCTION
+Python is a high level ,interpreted and general purpose programming language
+-> Is designed to be easy to read and write and powerful enough to build several things in different 
+domains - can build amost anythings
+
+WHY PYTHON?
+1.Simple and readable syntax
+**syntax is the set of rules that define how code is wriitten in a programming language**
+
+2.Less code ,more power - what might take language like Java or C++ or C 10 lines to do , Python might do the 
+same in 2 lines
+
+3.Interpreted Language - doesn't need to compile - Python code just runs by running Python files directly
+    **Interpreted languages** - executed by the interpreter by reading line by line ...Python
+    **Compiled languages** - ...Java ,C, C#, C++ , Rust, Go
+        -> you write a program
+        -> compile the program 
+        -> compiler checks for errors
+        -> if no errors , it creates an executable file
+        -> Machine executes and gives back output
+
+4.Massive community & libraries
+5.Cross platform - can run on any OS -> Windows , MacOS ,Linux and mobile systems
+
+PYTHON APPLICATIONS
+1.Web Development
+2.Data Science & Machine Learning
+3.Cybersecurity
+4.Game development
+5.Robotics
+
+CREATING A PYTHON FILE
+-To create a python file use .py extension
+main.py
+index.py
+regsiter.py
+number.py
+
+
+VARIBLES
+-> A variable a memory space / container used to hold values /data
+-> Think of it like  box used to store something
+->Simplest way to store data in programming
+
+x = 10
+x ---> variable
+10 --> value
+
+name = "Brian"
+name ---> variable
+"Brian" -> value
+
+N/B:- Variables can have any name of your choice but have to follow variable naming rules
+
+VARIABLE NAMING RULES
+1.Variable names can only contain letters,numbers and underscores
+ **Valid variable names**
+    -> name , number, x , y , email, phone, full_name1, number1
+**Invalid variable names**
+    -> name@ ,#number , full/name, name() ,'name'
+
+2.Variable names can only start with letters or underscores -cant start with numbers
+**valid names**
+    -> name1 , name2 , _full_name_ , _full_name1
+**Invalid names**
+    -> 1name, 23email,
+
+3.Variable names cant have spaces
+**Invalid names**
+    -> full name , phone number
+**Valid names**
+    -> full_name , fullname
+    -> phone_number , phonenumber
+
+4.Variable names are case sensitive
+ -> name , NAME, Name , NAMe -> not equal
+ -> x & X -> 2 different variables
+ x = 10
+ X = 10
+
+5.Variable names cant be Python keywords - cant use reserved words
+
+N/B:- It is good practice to give variables meaningful names
+-> name = "Jane"
+    x = "Jane"
+    email = "john@mail.com"
+
+Outputting values ->print() - function used to output / display values
