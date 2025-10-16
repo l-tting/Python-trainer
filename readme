@@ -86,3 +86,66 @@ N/B:- It is good practice to give variables meaningful names
     email = "john@mail.com"
 
 Outputting values ->print() - function used to output / display values
+
+
+DATA TYPES
+-A data type tells Python what kind of value something is and what operations can be done on it
+-Every variaable has a type depending on the value it holds
+**Python Data Types**
+1.NUMERICAL DATA TYPES
+-Data that holds numerical values
+-Categorized into two:
+    a) Integer - numerical values representing whole numbers 
+        e.g 20,30,12,44,5000000
+        -denoted as int
+    b) Float - numerical values representing decimal or floating point numbers
+        e.g 12.4777, 1.3, 78.0122
+        -denoted as float 
+
+2.TEXTUAL DATA TYPES
+- Text based data
+- String - sequence of characters  -letters, numbers, symbols ,spaces etc enclosed in quotes (single or double)
+- denoted as str 
+- enables Python to work with text
+e.g 
+   name = "John Doe"
+   name = 'John Doe'
+   message = 'Hello World!!!'
+   sentence = "This is the 2nd programming class at 6:30pm(EAT)"
+   number = "100"
+
+
+
+
+3.BOOLEAN DATA TYPES
+-Data types used to represent truth values
+-True or False
+-denoted as bool
+is_adult = False
+
+
+int - numerical whole numbers
+float - numerical decimal numbers
+str - charcters enclosed in quotes
+bool - truth values
+
+
+CHECKING FOR DATA TYPES
+-We identify the type of data a value is in Python using type() function
+-Returns data type 
+
+**yellow** -undefined error 
+**red** - syntax or functional error
+
+Indentation - tabs or spaces at the beginning of a line
+print() - output values in the terminal
+type() - determine the data type
+input() - take user input from the terminal
+
+
+TAKING USER INPUT
+-Allowing the user to interact with the program by allowing the program to get data from the user
+-In Python we take user input using input()
+-N/B:- Any and all data coming from user input will always be a 
+
+**Comments , Multiline strings, Type casting**
