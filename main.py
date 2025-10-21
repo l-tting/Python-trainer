@@ -16,7 +16,12 @@ print(type(num2))
 print(type(message))
 print(type(password_correct))
 
-
+#####python inputs
 value = input("Type something: ")
 print(value)
 print(type(value))
+
+x = 20
+y = input("Enter a value: ")
+print("Value input is: ",y)
+

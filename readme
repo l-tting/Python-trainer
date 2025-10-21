@@ -149,3 +149,62 @@ TAKING USER INPUT
 -N/B:- Any and all data coming from user input will always be a 
 
 **Comments , Multiline strings, Type casting**
+
+**Comments**
+-A way of documenting code - highlighting & explaining key points or important features
+-Any commented code / line /lines arent executed by the program
+-Comments are enabled by #  
+
+**Multiline Strings**
+-Strings that traverse more than one line
+- By default a string traverses only one line
+- We use tripple openning and closing quotations
+    -> """ ....""" or ''' ....'''
+
+**Type Casting or Type Conversion**
+-> Converting data from one type to another
+-> str, bool, int , float
+-> str(), bool(), int(), float()
+-> boolean conversion : 1 -> True , 0 -> False
+
+**STRING OPERATIONS**
+-Various ways in which we can manipulate string data
+-Mostly we use inbuilt methods
+
+1. Concatenation - combining or joining two or more strings into a single string
+            -we use '+' for joining strings
+
+2. Indexing - the order of characters in a string
+        -> indexing starts from zero - zero based
+        -> use [] to access items by index
+        -> can be reverse based -starts from -1
+
+3.Slicing - extracting a piece of data from a full string
+    -we use indexing
+    -starting point index : ending point index
+    e.g 0:5
+
+4.Length - determining the length or no of characters in a string
+        -we use len()
+        -spaces are also counted
+
+5.Casing - changing a string from uppercase to lowercase and vice versa
+        - .lower() .upper()
+
+
+TASK
+1. .strip()
+2. .lstrip()
+3 .rstrip()
+4. .title()
+5 . index()
+6. find()
+7. count()
+8. endswith() & startswith()
+9. isupper() & islower()
+10. split()
+11. join()
+12. replace()
+13. formatted string
+
+14. Task on slide 27
