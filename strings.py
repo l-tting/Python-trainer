@@ -28,6 +28,38 @@ b = "TEXT"
 print(b.lower())
 
 #strip - remove whitespaces
-string = "     random string"
+string = "     random string  .    "
 print(string)
 print(string.strip())
+
+#rstrip & lstrip
+print(string.rstrip())
+print(string.lstrip())
+
+#split 
+sentence = "this is a dog; of brand; German Shepherd"
+print(sentence.split(';'))
+
+#title
+print(sentence.title())
+
+#replace 
+student = "Hello world"
+print(student.replace("l","k"))
+# print(student.index("x"))
+print(student.find("x"))
+print(student.count('H'))
+print(student.startswith("Helo"))
+print(student.endswith("s"))
+print(student.isupper())
+print(student.islower())
+print(student.istitle())
+
+first_name = "Ken"
+last_name = "Mugambi"
+value = f"{first_name} {last_name} is a student"
+print(value)
+print("This is a statement from Ken Mugambi ")
+print(f"This is a statement from {first_name} {last_name}")
+
+

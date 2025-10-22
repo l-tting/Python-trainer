@@ -167,7 +167,7 @@ TAKING USER INPUT
 -> str(), bool(), int(), float()
 -> boolean conversion : 1 -> True , 0 -> False
 
-**STRING OPERATIONS**
+**STRING OPERATIONS / METHODS**
 -Various ways in which we can manipulate string data
 -Mostly we use inbuilt methods
 
@@ -193,18 +193,41 @@ TAKING USER INPUT
 
 
 TASK
-1. .strip()
-2. .lstrip()
-3 .rstrip()
-4. .title()
-5 . index()
-6. find()
-7. count()
-8. endswith() & startswith()
-9. isupper() & islower()
-10. split()
-11. join()
-12. replace()
-13. formatted string
+1. .strip() - removes whitespces from a string on both sides
+2. .lstrip() -removes whitespaces from the left side
+3 .rstrip() - removes whitespaces from the right side
+4. .title() - capitalizes the first character of each word in a string
+5 . index() - finds the index of the first instance of a specified character
+            - if no value is found throws an error
+6. find() -  finds the index of the first instance of a specified character 
+            - if no value is found returns -1
+7. count() - gives the no of occurrences of a specified character
+8. endswith()  - checks whether a string ends with specified character or characters
+    & startswith() - checks whether a string starts with specified character or characters
+    - returns a Boolean value
+9. isupper() - checks whether a string is in uppercase format
+ & islower() - checks whether a string is in lowercase format
+     -returns a Boolean value
+10. split() - split a string into substrings using a specified character - place the substrings in a list
+11. ***join()***
+12. replace() - replace a part of a string with another charcter or characters
 
-14. Task on slide 27
+13. formatted string 
+    ->> f-string
+    --> converts a string into a formatted string
+    --> allows you to embed placeholders and variables inside strings
+    --> f or F.  &&& curly braces for placeholder variables
+
+14. ***Task on slide 27***
+
+
+**INTEGER & FLOAT OPERATIONS**
+1.Addition ---> + 
+2.Subtraction ----> -
+3.Division ------> /
+4.Multiplication -----> *
+5.Exponent ------> raise a number to another(power) ---> **
+6.Modulus -----> % ---> returns the remainder of a division operation
+7.Floor -----> // ---> divides and rounds down a number to the nearest whole number
+
+**Task on slide 30**
