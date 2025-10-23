@@ -23,5 +23,11 @@ print(type(value))
 
 x = 20
 y = input("Enter a value: ")
-print("Value input is: ",y)
 
+# print("Value input is: ",y)
+
+x = 23
+
+x = 12
+
+print(x)

@@ -62,4 +62,6 @@ print(value)
 print("This is a statement from Ken Mugambi ")
 print(f"This is a statement from {first_name} {last_name}")
 
+x = 5
+
 

@@ -219,6 +219,10 @@ TASK
     --> f or F.  &&& curly braces for placeholder variables
 
 14. ***Task on slide 27***
+-No.2
+-No.4
+-No.5
+
 
 
 **INTEGER & FLOAT OPERATIONS**
@@ -231,3 +235,55 @@ TASK
 7.Floor -----> // ---> divides and rounds down a number to the nearest whole number
 
 **Task on slide 30**
+-No.4
+
+
+**DATA STRUCTURES**
+-Store multiple items or dataa in a single memory space using collections
+-A way to store multiple items together
+-Types of data structures/collections
+1.Lists
+2.Tuples
+3.Dictionary
+4.Sets
+
+**LISTS**
+-An ordered and mutable collection of items of different data types
+-A container that holds more than one value - the values can be of any data type 
+-Use [] -> square brackets
+-Values in a list are comma-separated
+
+Properties of Lists
+1.They are ordered - uses indexing to access/order items
+    -indexing is zero-based(starts from zero)
+2.They can store multiple items of different data types 
+  e.g items = ["Mango",1,2,3.98,False]
+3.They are mutable - values in the list can be changed
+4.Values in a list are accessed using index
+5.A list can also contain other lists -nested list
+
+
+**LIST METHODS**
+1.Length - no of items in a list - len()
+2.Adding items to a list
+    **append() - adds a single item at the end of a list
+    **extend() - adds multiple items at the end of a list - uses a list
+    **insert() - adds an item at a specific index -insert(index,value)
+3.Removing items from a list
+    **remove() - removes an item by value
+    **pop()
+     - if no index is specified , it removes the last item
+     -can remove an item at a specific index if index is specified
+    **clear() - empties a list - removes everything from the list
+
+
+Task
+1.count()
+2.index()
+3.sort()
+4.reverse()
+5.max()
+6.min()
+7.copy()
+8.the 2 methods of joining lists
+9. task on slide 35
