@@ -253,7 +253,7 @@ TASK
 -Use [] -> square brackets
 -Values in a list are comma-separated
 
-Properties of Lists
+**Properties of Lists**
 1.They are ordered - uses indexing to access/order items
     -indexing is zero-based(starts from zero)
 2.They can store multiple items of different data types 
@@ -278,12 +278,28 @@ Properties of Lists
 
 
 Task
-1.count()
-2.index()
-3.sort()
-4.reverse()
-5.max()
-6.min()
-7.copy()
+1.count() - returns the no of occurrences of an item
+2.index() - returns the index of the first occurrence of an item
+3.sort() - by default sorts a list in ascending order
+        - it can sort a list in descending order if you pass reverse=True
+4.reverse() - reverses the order of a list - last item becomes first and vice versa
+5.max() - returns the largest value
+6.min() - returns the smallest value
+7.copy() - creates a copy of a list
 8.the 2 methods of joining lists
+    -extend
+    -concatenation
 9. task on slide 35
+
+**TUPLES**
+-A tuple is a data structure used to hold multiple values of any data type that cant be changed or removed
+-represented using ()
+
+**properties of tuples**
+1.They are ordered - uses indexing to access /order items
+2.Values in a tuple are immutable - cant be changed or removed or added ***-unique property**
+3.They can hold multiple items of different types
+
+**TASK**
+1.How to update a tuple? - adding / removing / changing items in a tuple
+2.Slide 38

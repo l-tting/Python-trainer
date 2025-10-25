@@ -39,7 +39,54 @@ print(items)
 items.pop(3)
 print(items)
 
-
 #clear
 items.clear()
 print(items)
+
+#count
+numbers = [10,20,20,30,40,50,20,5,12,1,3]
+count = numbers.count(20)
+print(count)
+
+#index
+i = numbers.index(20)
+print(i)
+
+#SORT
+numbers.sort()
+print(numbers)
+
+letters = ["aa","xy","bb","f","d"]
+letters.sort()
+print(letters)
+
+numbers.sort(reverse=True)
+print(numbers)
+
+letters.reverse()
+print(letters)
+
+#max & min
+max_element = max(letters)
+min_element = min(letters)
+print(max_element)
+print(min_element)
+
+#copy
+values = [1,2,3]
+values2 = values.copy()
+print(values2)
+
+
+#joining lists
+#1.concatenation
+num1 = ["Jack","Jill"]
+num2 = ["Joyce"]
+num3 = num1 + num2
+print(num3)
+
+#2.extend
+fruits = ["Mango","Pear"]
+more_fruits = ["orange","apple"]
+fruits.extend(more_fruits)
+print(fruits)
