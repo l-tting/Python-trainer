@@ -239,7 +239,7 @@ TASK
 
 
 **DATA STRUCTURES**
--Store multiple items or dataa in a single memory space using collections
+-Store multiple items or data in a single memory space using collections
 -A way to store multiple items together
 -Types of data structures/collections
 1.Lists
@@ -302,4 +302,76 @@ Task
 
 **TASK**
 1.How to update a tuple? - adding / removing / changing items in a tuple
+---> convert tuple to a list
+---> manipulate the list
+---> convert list back to tuple
 2.Slide 38
+
+
+**SETS**
+-A collection of unique and unordered items
+-Represented using curly braces - {}
+**Properties of sets**
+1.They are unordered - no indexing
+2.Values in a set are unique - no duplicate / repeated values
+3.They are mutable - can be changed
+4.Can hold multiple items of any type
+
+**set operations**
+1.accessing items in a set
+    -> cant directly access items in a list
+    -> use 'in' to confirm whether value is in set
+    -> convert to a list / tuple
+2.adding items to a set
+    -> add a single item - add()
+    -> add multiple items - update() - uses a list
+3.removing items from a set
+    -> .remove()- removes an element by value
+            -> if an element to be removed isnt found/doesnt exist, it throws an error
+    -> .discard() -removes an element by value
+            -> if an element to be removed isnt found/doesnt exist,it ignores - no error
+    -> .clear() - empties the set
+
+**DICTIONARIES**
+- A collection of key-value pairs
+-Represented using curly braces - {}
+-> *key* - what we use to access values
+-> *value* - actual data being stored
+            - attached to keys - accessed using keys
+-> key-value pairs aare comma-separated
+e.g "name":"Alice",
+    "age" :30
+
+"name" -> key
+"Alice" -> value
+    **Keys**
+1.They are unique and case sensitive
+    -they follow identifier/variable naming rules
+2.Keys must be strings
+3.They are immutable
+4.They are used to access values in a dictionary
+    **Values**
+1.Can be of any data type
+2.Are accessed using keys
+
+        **DICTIONARY METHODS/OPERATIONS**
+1.Accessing values in a dictionary -> values are accessed using keys
+        -> bracket notation -> my_dict["key"]
+        -> get methods - get("key")
+2.Adding or updating entries
+    -add a new key-value pair ---> my_dict['key'] = value
+    -update multiple keys -> update({...})
+3. .keys() - returns all dictionary keys in a list
+4. .values -returns all dictionary values in a list
+5. .items() - return all key-value pairs in a list of tuples
+6.Removing items from a dictionary
+    -> .pop("key") - pass a key to remove a specific value
+    -> .popitem() - removes the last inserted item
+    -> .clear() - empties the dictionary
+
+**difference between bracket notation and get()**
+**copy && nested dictionaries"
+
+**TASK**
+1.Side 40 - follow the 2 links provided
+2.Slide 43
