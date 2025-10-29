@@ -4,7 +4,6 @@ person = {
     "address":"123 Kimathi St",
     "married":False,
     "friends":["Jake","Natalie"],
-   
 
 }
 print(person)
@@ -45,3 +44,15 @@ print(person)
 person.clear()
 print(person)
 # {}
+
+
+trainees = ["John", [2, ["James","Mary"]]]
+
+
+print(trainees[1][1])
+trainees.remove("John")
+print(trainees)
+
+trainees[0][1].remove("Mary")
+print(trainees)
+
