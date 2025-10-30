@@ -542,3 +542,35 @@ an if statement within another if statement
 1.slide 56
 2.slide 57
 3.slide 58
+
+**LOOPING**
+- A programming structure that repeats /executes a block of code multiple times until a condition is met
+-Also called iteration
+
+*Why use Loops?*
+1.Avoid writing repititive code
+2.To process collections of data better and faster -lists, strings , tuples
+
+Note:- When the condition is no longer met , the loop stops / breaks
+
+*Types of Loops*
+1.For Loop  - uses the 'for' keyword
+            -used when you know how many times you want to loop
+2.While Loop -uses the 'while' keyword
+            - used when you dont know how many times you want to loop
+            - repeat / execute as long as the condition is True
+
+**range()**
+-includes numbers within some range e.g 1 - 100
+e.g
+range(100) - starts from zero and ends at 99
+range(1000) - starts from zero and ends at 999
+range(40) - starts at 0 and end at 39
+_----------------------------------------------_
+range(3,10) - starts from 3 and ends at 9
+range(400,501) - starts from 400 and ends at 500
+
+
+**TASK**
+1.Slide 59 - if statement task continuation
+2.Slide 63 - loops task 
