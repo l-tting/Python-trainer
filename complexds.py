@@ -1,50 +1,69 @@
-complex_dict_2 = {
-    "company": {
-        "name": "TechCorp",
-        "departments": {
-            "engineering": {
-                "teams": [
-                    {"name": "Backend", "members": [{"id": 101, "name": "Alice"}, {"id": 102, "name": "Bob"}]},
-                    {"name": "Frontend", "members": [{"id": 103, "name": "Charlie"}, {"id": 104, "name": "Dana"}]}
-                ],
-                "budget": 1000000
-            },
-            "hr": {
-                "teams": [
-                    {"name": "Recruitment", "members": [{"id": 201, "name": "Eve"}, {"id": 202, "name": "Frank"}]},
-                    {"name": "Training", "members": [{"id": 203, "name": "Grace"}]}
-                ],
-                "budget": 200000
+complex_dict = {
+    "user": {
+        "id": 101,
+        "name": "Alice",
+        "roles": ("admin", "editor"),
+        "preferences": {
+            "theme": "dark",
+            "languages": ["Python", "Go", "Rust"],
+            "notifications": {
+                "email": True,
+                "sms": False,
+                "apps": ["Slack", "Discord"]
             }
-        },
-        "offices": [
-            {"city": "New York", "floors": (10, 20), "facilities": {"cafeteria": True, "gym": True, "parking": {"spots": 100, "reserved": 20}}},
-            {"city": "London", "floors": (5, 15), "facilities": {"cafeteria": False, "gym": True, "parking": {"spots": 50, "reserved": 10}}}
-        ]
+        }
     },
     "projects": [
         {
-            "name": "Alpha",
-            "deadline": "2025-12-31",
+            "title": "Project X",
+            "contributors": ("Bob", "Charlie"),
             "tasks": [
-                {"task": "Design", "assigned_to": [101, 103], "status": "ongoing"},
-                {"task": "Implementation", "assigned_to": [102, 104], "status": "pending"}
+                {"id": 1, "desc": "Setup repo", "done": True},
+                {"id": 2, "desc": "Create API", "done": False},
+                {"id": 3, "desc": "Write docs", "done": False}
             ],
-            "tags": {"priority": "high", "type": "internal"}
+            "tags": {"backend", "fastapi", "postgres"}
         },
         {
-            "name": "Beta",
-            "deadline": "2026-03-15",
-            "tasks": [
-                {"task": "Research", "assigned_to": [201, 203], "status": "completed"},
-                {"task": "Deployment", "assigned_to": [102], "status": "pending"}
-            ],
-            "tags": {"priority": "medium", "type": "client"}
+            "title": "UI Overhaul",
+            "contributors": ["Diana"],
+            "tasks": [],
+            "tags": {"frontend", "react"}
         }
     ],
-    "metrics": {
-        "employees": {"total": 10, "active": 9},
-        "projects": {"active": 2, "completed": 1},
-        "offices": {"total": 2, "remote_allowed": True}
-    }
+    "config": {
+        "max_retries": 3,
+        "features": {
+            "beta": True,
+            "experiments": [
+                ("feature_flag", 0.75),
+                ("new_login_flow", 0.2),
+                ["dark_mode_v2", 0.05]
+            ]
+        },
+        "limits": {
+            "storage": {
+                "free": 5 * 1024**3,
+                "pro": float("inf")
+            }
+        }
+    },
+    "history": [
+        {"action": "login", "timestamp": "2025-10-28T15:00:00Z"},
+        {"action": "upload", "timestamp": "2025-10-28T15:05:10Z", "file": ("report.pdf", 1024 * 500)},
+        {"action": "share", "timestamp": "2025-10-28T15:06:00Z", "to": ["Team A", "Team B"]}
+    ],
+    "misc": (
+        {"nested_tuple_dict": {"numbers": (1, 2, 3)}},
+        [True, False, None, {"key": "value"}],
+        "end_of_world"
+    )
 }
+
+print(type(complex_dict))
+print(complex_dict.keys())
+# dict_keys(['user', 'projects', 'config', 'history', 'misc'])
+
+print(complex_dict["history"][1]["file"][0])
+
+
