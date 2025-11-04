@@ -25,6 +25,3 @@ else:
         print(f"Demerit points -> {demerit_points}")
 
 
-   
-
-
