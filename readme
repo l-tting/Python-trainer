@@ -592,7 +592,7 @@ no 8,9,11,14
 
 **Why Use Functions?**
 1.Reusability of code
-2.Modularity
+2.Modularity - break large pieces of code into smaller manageble parts
 3.Code Organization & Better readability
 4.Better debugging
 5.Scalability of code
@@ -638,3 +638,7 @@ on the questions 1 -20 ...do the following questions using functions
 -> question 1 , question 2, question 5
 
 -> question on slide 70
+
+
+**task**
+On questions 1 - 20 ...redo 15-20 using functions

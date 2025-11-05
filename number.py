@@ -42,6 +42,9 @@ print(four_result)
      # 8.926
 
 
+x = 1
+print(x)
+
 
 
 
