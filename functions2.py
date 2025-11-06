@@ -23,6 +23,8 @@ def get_grade(avg):
         return "E"
     else:
         return "Invalid Mark"
+    
+    
 
 total_mark = get_total(maths,eng,swa,sci,sos)
 average = get_average(total_mark)
@@ -32,3 +34,20 @@ print("Total mark is: ",total_mark)
 print("Average mark is: ",average)
 print("Final grade is: ",grade)
 
+def calculate_nssf(gross_salary):
+    nssf = gross_salary*0.06
+    if nssf > 1000:
+        nssf = 1000
+    return nssf
+
+
+def calculate_nhdf(gross_salary, nhdf_rate = 0.015):
+    nhdf = gross_salary * 0.015
+    return nhdf
+
+
+def looping():
+    nums = []
+    for i in range(100):
+        nums.append(i)
+    return  nums

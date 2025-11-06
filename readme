@@ -641,4 +641,10 @@ on the questions 1 -20 ...do the following questions using functions
 
 
 **task**
-On questions 1 - 20 ...redo 15-20 using functions
+On questions 1 - 20 ...redo 15-20 using functions.
+
+---Using functions---:
+1.Write a Python program to reverse a string.
+2.Write a Python program to print the even numbers from a given list.
+3.Write a Python program to create and print a list where the values are the squares of
+ numbers between 1 and 30 (both included).  
