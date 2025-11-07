@@ -1,7 +1,3 @@
-# Write a program that takes input of someone's basic salary
-# and benefits, adds them to find the gross salary then uses
-# the gross salary to find the NHIF. To find the Kenya NHIF Rate using
-
 basic_salary = float(input("Enter basic salary: "))
 benefits = float(input("Enter benefits: "))
 
@@ -46,11 +42,61 @@ def get_nhif(gross):
     return nhif
 
 
+def get_nssf(gross):
+    if gross < 18000:
+        nssf = gross * 0.06
+    else:
+        nssf = 1080
+    return nssf
+
+
+def get_nhdf(gross):
+    return gross * 0.015
+
+
+def get_taxable_income(gross,nssf,nhdf,nhif):
+    return gross - (nssf + nhdf + nhif)
+
+
+def get_payee(taxable_income):
+    relief = 2400
+    if taxable_income >=0 and taxable_income <= 24000:
+        payee = 0
+    elif taxable_income > 24000 and taxable_income <= 32333:
+        payee = 2400 + ((taxable_income - 24000)*0.25) - relief
+    elif taxable_income > 32333 and taxable_income <= 500000:
+        payee = 2400 + (8333 * 0.25) + ((taxable_income - 32333)*0.3) - relief
+    elif taxable_income > 500000 and taxable_income <= 800000:
+        payee = 2400 + (8333 * 0.25) + (467667*0.3) + ((taxable_income - 500000) * 0.325) - relief
+    else:
+        payee = 2400 + (8333 * 0.25) + (467667*0.3) + (300000*0.325) + ((taxable_income - 800000) *0.35) - relief
+    return payee
+
+
+def get_net_salary(gross,nhif,nhdf,nssf,payee):
+    return gross - (nhif + nhdf + nssf + payee)
+
+
 
 gross_salary = get_gross_salary(basic_salary,benefits)
 nhif = get_nhif(gross_salary)
+nssf = get_nssf(gross_salary)
+nhdf = get_nhdf(gross_salary)
+taxable_income = get_taxable_income(gross_salary,nssf,nhdf,nhif)
+payee = get_payee(taxable_income)
+net_salary = get_net_salary(gross_salary,nhif,nhdf,nssf,payee)
 
+print("-------------------------------------------------")
+print("---------------MY TAX WORKFLOW-------------------")
 print("Gross salary is Ksh. ",gross_salary)
 print("NHIF is Ksh. ",nhif)
+print("NSSF is Ksh. ",nssf)
+print("NHDF is Ksh. ",nhdf)
+print("Taxable income is Ksh. ",taxable_income)
+print("Payee is Ksh. ",payee)
+print("---------------------------------------------------")
+print("Net salary is Ksh. ",net_salary)
+
+print("----------------- end of tax ------------------------")
 
 
