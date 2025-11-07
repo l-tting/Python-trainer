@@ -77,7 +77,6 @@ def get_net_salary(gross,nhif,nhdf,nssf,payee):
     return gross - (nhif + nhdf + nssf + payee)
 
 
-
 gross_salary = get_gross_salary(basic_salary,benefits)
 nhif = get_nhif(gross_salary)
 nssf = get_nssf(gross_salary)
@@ -85,6 +84,7 @@ nhdf = get_nhdf(gross_salary)
 taxable_income = get_taxable_income(gross_salary,nssf,nhdf,nhif)
 payee = get_payee(taxable_income)
 net_salary = get_net_salary(gross_salary,nhif,nhdf,nssf,payee)
+
 
 print("-------------------------------------------------")
 print("---------------MY TAX WORKFLOW-------------------")
@@ -96,7 +96,6 @@ print("Taxable income is Ksh. ",taxable_income)
 print("Payee is Ksh. ",payee)
 print("---------------------------------------------------")
 print("Net salary is Ksh. ",net_salary)
-
-print("----------------- end of tax ------------------------")
+print("----------------- end of tax -----------------------")
 
 
